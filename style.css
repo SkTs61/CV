@@ -1,0 +1,192 @@
+:root{
+    --bordercolor:#ddd;
+    --contentcolor:#444;
+
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--contentcolor);
+}
+
+.custom-a{
+    text-decoration: underline;
+}
+body{
+    background-color: #ddd;
+}
+
+.margintop5{
+    margin-top: 5px;
+}
+.margintop30{
+    margin-top: 30px;
+}
+.maincontainer{
+    width: 794px;
+    min-height: 500px;
+    max-height: 1123px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.332);
+    padding: 30px 20px;
+    padding-bottom: 50px;
+}
+.header{
+  
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.content{
+    
+    min-height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+}
+.head1{
+    width: 200px;
+    height: 200px;
+   
+  
+
+}
+.head1 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.profileInfo{
+    background-color: blue;
+    width: 100%;
+    flex: 1;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20px;
+    background: linear-gradient(90deg, rgba(121,86,9,0.465721322708771) 6%, rgba(0,30,36,0.8018557764902836) 100%, rgba(190,255,0,1) 100%);
+    border-radius: 10px;
+
+   
+
+}
+
+.profiletext{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.leftcontainer{
+    width: 200px;
+    height: 100%;
+    min-height: 300px;
+   
+}
+.rightcontainer{
+    min-height: 300px;
+    flex: 1;
+}
+
+a{
+    text-decoration: none;
+}
+.contactcontainer{
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0px;
+
+}
+
+.contactcontainer a{
+    font-size: small;
+    color: #333;
+}
+.llinka{
+    color: #0072b1;
+}
+#github{
+    color: #171515;
+}
+#leftsection{
+    font-size: 16px;
+    margin: 20px 0px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.skillscontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillsbox{
+    background-color: #bbb;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.languagescontainer{
+    margin-bottom: 10px;
+}
+
+.languagecontainer{
+    font-size: 18px;
+    color: #171515;
+    margin-bottom: 5px;
+
+}
+/* Content */
+
+.rightcontainer{
+    min-height: 300px;
+    flex: 1;
+  
+    gap: 0px 20px;
+}
+.componenttitle{
+    margin-top: 10px;
+    font-size: 24px;
+    border-bottom: 1px solid var(--contentcolor);
+    margin-left: 20px;
+
+}
+.componentschool{
+    font-size: 18px;
+    color: var(--contentcolor);
+}
+.componenttrainingtype{
+    font-size: 16px;
+    color: var(--contentcolor);
+}
+.componenterm{
+    font-size: 12px;
+    color: var(--contentcolor);
+}
+.componentdesc{
+    font-size: 18px;
+    color: black;
+   
+}
+.contentcomponent{
+    margin-left: 20px;
+    margin-top: 20px;
+    border-left: 5px solid;
+    border-color: #0072b1;
+    padding-left: 15px;
+}
+.contentul{
+    font-size: 18px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
