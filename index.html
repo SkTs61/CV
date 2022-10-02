@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="#">
 
     <title>CV</title>
 
@@ -16,8 +17,8 @@
     <div class="Extopdf">
         <button id="pdfbtn">Export to PDF</button>
         <select id="language">
-            <option value="English" selected>EN</option>
-            <option value="Turkish">TR</option>
+            <option value="en" selected>EN</option>
+            <option value="tr">TR</option>
 
         </select>
     </div>
@@ -33,7 +34,7 @@
         <div class="profileInfo">
             <h1>Sinan Kara</h1>
             <h4>Frontend Developer</h4>
-            <p class="profiletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p class="profiletext" id="personaldescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Debitis voluptas expedita modi molestiae voluptate aliquam, 
             maxime magnam libero incidunt vero ducimus quod ullam ab ad provident cum quas? 
             Asperiores, adipisci.</p>
@@ -104,16 +105,16 @@
         </div>
         <!--Right Side-->
         <div class="rightcontainer">
-            <h1 class="componenttitle">Training</h1>
+            <h1 class="componenttitle" id="cvtraining">Training</h1>
             <div class="contentcomponent">
                
-                <h3 class="componentschool">Udemig Computer Science Training</h3>
+                <h3 class="componentschool">Udemig Software Training</h3>
                 <h2 class="componenttrainingtype margintop5"> React Developer</h2>
                 <p class="componenterm margintop5"><small>6 Months in 2022</small></p>
                 <p class="componentdesc margintop5"> I participated a full course of six months as to frontend developer focused react.js. </p>
             </div>
 
-            <h1 class="componenttitle margintop30">Work Experience</h1>
+            <h1 class="componenttitle margintop30" id="workexperience">Work Experience</h1>
             <div class="contentcomponent">
                
                 <h3 class="componentschool">Land Forces</h3>
@@ -139,7 +140,7 @@
                 </ul>
             </div>
 
-            <h1 class="componenttitle margintop30">Projects</h1>
+            <h1 class="componenttitle margintop30" id="listofprojects">Projects</h1>
             <div class="contentcomponent">
                
                 <h3 class="componentschool">Share</h3>
