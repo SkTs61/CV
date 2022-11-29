@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form onsubmit="return handleLogin(event)">
+        <div>
+            <label for="Email">Email</label>
+            <input type="text" id="Email">
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" id="Password">
+        </div>
+        
+        <div>
+            <button type="submit">Login</button>
+        </div>
+        <p><a href="http://127.0.0.1:5500/register.html">Go to the registration page If you dont have an account</a></p>
+       
+    </form>
+    <script>
+        function handleLogin(event) {
+        event.preventDefault();
+        const email=document.getElementById("email")
+            const password=document.getElementById("password")
+            if (email.value === "" || password.value === "") {
+                alert("Neither email or password can't be left as empty");
+                return;
+            }
+            const user={
+                email:email.value,
+                password:password.value
+
+            }
+            fetch("http://localhost:3004/user/login", {
+                method: "POST",
+                body: JSON.stringify(user),
+                headers: {
+                    Accept: "applications/json",
+                    "Content-Type": "applications/json",
+
+                },
+            }
+            )
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                if (data.status === 400) {
+                    alert(data.message)
+                    return
+                }
+                
+                if(data.status === 200) {
+                    localStorage.setItem("isLogin", JSON.stringify(true));
+                    windows.location.replace("http://127.0.0.1:5500/index.html")
+                }
+            })
+            .catch((error) => console.log(error));
+
+
+        }
+    </script>
+    
+</body>
+</html>
